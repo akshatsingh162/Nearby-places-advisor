@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+# 🌍 Smart Nearby Places Recommender
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application that recommends nearby places based on the user's **mood and intent** such as work, date, quick bite, or budget-friendly outings.
 
-## Available Scripts
+Built with **React**, enhanced with **animations**, and designed with a strong focus on **real-world UX and frontend logic**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+https://nearby-places.netlify.app
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* 🎭 **Mood-based recommendations** (Work, Date, Quick Bite, Budget)
+* 📍 **Nearby places listing** with:
 
-### `npm run build`
+  * Distance
+  * Ratings
+  * Open / Closed status
+* 🔀 **Sorting & filtering** (by distance, rating)
+* 🎨 **Colourful, animated, professional UI**
+* ⚡ Smooth micro-interactions using Framer Motion
+* 📱 Fully **responsive design** (mobile + desktop)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
 
-### `npm run eject`
+* **React (Create React App)**
+* **JavaScript (ES6+)**
+* **Tailwind CSS** – utility-first styling
+* **Framer Motion** – animations & transitions
+* **Lucide Icons** – modern icon set
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### APIs (Planned / Optional)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* OpenStreetMap / Google Maps
+* Places API (free-tier friendly)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧠 Project Motivation
 
-## Learn More
+This project was built to:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Demonstrate **real-world frontend problem solving**
+* Practice **component-based UI design**
+* Implement **sorting & filtering logic**
+* Build a project suitable for **college evaluation, portfolios, and interviews**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+nearby-places/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── MoodSelector.jsx
+│   │   ├── PlaceCard.jsx
+│   │   └── PlacesList.jsx
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⚙️ Installation & Setup
 
-### Making a Progressive Web App
+### 1️⃣ Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+git clone https://github.com/<your-username>/nearby-places.git
+cd nearby-places
+```
 
-### Advanced Configuration
+### 2️⃣ Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm install
+```
 
-### Deployment
+### 3️⃣ Run the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm start
+```
 
-### `npm run build` fails to minify
+The app will run at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+http://localhost:3000
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized `build/` folder ready for deployment.
+
+---
+
+## 🌐 Deployment
+
+This project can be deployed for free using:
+
+* **Netlify** (recommended)
+* **Vercel**
+* GitHub Pages
+
+Deployment uses only the source code — **`node_modules` is not pushed**.
+
+---
+
+## 🔒 Environment Variables (Optional)
+
+If using APIs:
+
+```env
+REACT_APP_MAPS_API_KEY=your_api_key_here
+```
+
+> Environment variables are not committed to GitHub.
+
+---
+
+## 🧩 Future Improvements
+
+* 🔍 Real-time location detection
+* 🗺 Interactive map view
+* ⭐ User reviews & bookmarks
+* 🔐 Authentication
+* 📊 Analytics & usage insights
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — free to use and modify.
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!

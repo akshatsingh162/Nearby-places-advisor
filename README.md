@@ -9,7 +9,7 @@ Built with **React**, enhanced with **animations**, and designed with a strong f
 ## 🚀 Live Demo
 
 ```
-https://nearby-places.netlify.app
+https://smart-nearby-place-advisor.netlify.app/
 ```
 
 ---
